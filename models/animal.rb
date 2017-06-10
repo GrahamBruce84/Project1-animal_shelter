@@ -15,7 +15,7 @@ class Animal
 
   def save()
     sql = "INSERT INTO animals (name, age, type, breed, admission_date)
-    VALUES ('#{@name}', #{@age}, '#{type}', '#{@breed}', #{@admission_date})
+    VALUES ('#{@name}', #{@age}, '#{type}', '#{@breed}', '#{@admission_date}')
     RETURNING *;"
     result = SqlRunner.run(sql)
     @id = result[0]['id'].to_i()
@@ -35,7 +35,7 @@ class Animal
 
   def update()
     sql = "UPDATE animals SET (name, age, type, breed, admission_date) = 
-    ('#{@name}', #{@age}, '#{@type}', '#{@breed}', #{@admission_date})
+    ('#{@name}', #{@age}, '#{@type}', '#{@breed}', '#{@admission_date}')
     WHERE id = #{@id};"
     SqlRunner.run(sql)
   end

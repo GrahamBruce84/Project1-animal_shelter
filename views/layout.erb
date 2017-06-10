@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Animal Shelter</title>
-  <link rel="stylesheet" href="../public/styles.css">
+  <title>Animal House</title>
+  <link rel="stylesheet" type="text/css" href="/styles/structure.css">
 </head>
 <body>
-<nav class="navbar">
-  <ul>
-    <li><a href="/animals">Animals</a></li>
-    <li><a href="/owners">Owners</a></li>
-  </ul>
-</nav>
-  
+  <main>
+    <nav>
+      <ul>
+        <li><a href="/animals">Animals</a></li>
+        <li><a href="/owners">Owners</a></li>
+      </ul>
+    </nav>
+    <%= yield %>
+  </main>
 </body>
 </html>
