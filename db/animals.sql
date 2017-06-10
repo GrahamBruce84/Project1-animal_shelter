@@ -8,7 +8,7 @@ name VARCHAR(255),
 age INT8,
 type VARCHAR(255),
 breed VARCHAR(255),
-admission_date INT8
+admission_date DATE
 );
 
 CREATE TABLE owners (

@@ -2,7 +2,7 @@ require_relative '../db/sql_runner'
 
 class Animal
 
-  attr_accessor :id, :name, :age, :type, :breed
+  attr_accessor :id, :name, :age, :type, :breed, :admission_date
 
   def initialize(options)
     @id = options['id'].to_i() if options['id']
