@@ -1,0 +1,11 @@
+<h1>Adoptions</h1>
+
+<p><a href="/adoption/new">New Adoption</a></p>
+
+<ul>
+  <% for adoption in @adoptions %>
+  <li>
+    <p><%= adoption.animal.name %>
+      <%= adoption.owner.first_name %> </p>
+  </li>
+</ul>

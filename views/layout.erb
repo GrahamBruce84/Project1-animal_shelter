@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Animal House</title>
-  <link rel="stylesheet" type="text/css" href="/styles/structure.css">
+  <link rel="stylesheet" href="/styles/structure.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 </head>
 <body>
   <main>
-    <nav>
+  <div class="navbar">
+    <nav id="mynavbar">
       <ul>
         <li><a href="/animals">Animals</a></li>
         <li><a href="/owners">Owners</a></li>
+        <li><a href="/adoptions">Adoptions</a></li>
       </ul>
     </nav>
+    </div>
     <%= yield %>
   </main>
 </body>

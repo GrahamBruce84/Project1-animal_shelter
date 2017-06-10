@@ -1,0 +1,16 @@
+<h1>Potential Owners</h1>
+
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Second Name</th>
+    <th>Address</th>
+  </tr>
+  <% for owner in @owners %>
+  <tr>
+    <td><%= owner.first_name %></td>
+    <td><%= owner.second_name %></td>
+    <td><%= owner.address %></td>
+  </tr>
+  <% end %>
+</table>

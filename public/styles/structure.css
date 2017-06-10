@@ -1,0 +1,26 @@
+body {
+  background-color: #efdced;
+  font-family: 'Architects Daughter';
+}
+
+.flex {
+  display: flex;
+}
+
+table tr th td {
+  padding: 10px;
+  float: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

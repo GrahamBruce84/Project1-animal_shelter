@@ -1,19 +1,27 @@
 <h1>Animals</h1>
 
-<table>
+<table class="flex">
   <tr>
     <th>Name</th>
+    <th>|</th>
     <th>Age</th>
+    <th>|</th>
     <th>Type</th>
+    <th>|</th>
     <th>Breed</th>
+    <th>|</th>
     <th>Admission Date</th>
   </tr>
   <% for animal in @animals %>
   <tr>
     <td><%= animal.name %></td>
+    <td>|</td>
     <td><%= animal.age %></td>
+    <td>|</td>
     <td><%= animal.type %></td>
+    <td>|</td>
     <td><%= animal.breed %></td>
+    <td>|</td>
     <td><%= animal.admission_date %></td>
   </tr>
   <% end %>
