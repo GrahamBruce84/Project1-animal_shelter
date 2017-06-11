@@ -6,8 +6,8 @@ class Adoption
 
   def initialize(options)
     @id = options['id'].to_i() if options['id']
-    @animal_id = options['animal_id']
-    @owner_id = options['owner_id']
+    @animal_id = options['animal_id'].to_i()
+    @owner_id = options['owner_id'].to_i()
   end
 
   def save()
@@ -43,7 +43,7 @@ class Adoption
     sql = " SELECT * FROM owners o
             INNER JOIN adoptions ad
             ON ad.owner_id = o.id
-            WHERE o.id = #{owner_id};"
+            WHERE o.id = #{@owner_id};"
     result = SqlRunner.run(sql)
     return Adoption.new(result[0])
   end

@@ -12,7 +12,23 @@ table tr th td {
   float: inline-block;
 }
 
+tr {
+  padding: 10px;
+}
 
+td {
+  padding: 10px;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efdced;
+  text-align: right;
+}
 
 
 

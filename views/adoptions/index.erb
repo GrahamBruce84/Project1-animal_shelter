@@ -1,11 +1,16 @@
 <h1>Adoptions</h1>
 
-<p><a href="/adoption/new">New Adoption</a></p>
+<p><a href="/new">New Adoption Request</a></p>
 
-<ul>
-  <% for adoption in @adoptions %>
-  <li>
-    <p><%= adoption.animal.name %>
-      <%= adoption.owner.first_name %> </p>
-  </li>
-</ul>
+<div class="grid">
+  <div class="grid-row">
+    <% @adoptions.each do |adoption| %>
+    <div class="cell">First name: <%= adoption.owners.first_name %></div>
+    <div class="cell">Second_name: <%= adoption.owners.second_name %></div>
+    <div class="cell">Animal Name: <%= adoption.animal.name %></div>
+    <div class="cell">Animal Age: <%= adoption.animal.age %></div>
+  </div>
+</div>
+<hr>
+<% end %>
+
