@@ -53,4 +53,6 @@ class Adoption
     SqlRunner.run(sql)
   end
 
+  
+
 end

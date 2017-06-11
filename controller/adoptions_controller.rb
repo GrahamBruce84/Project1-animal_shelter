@@ -8,6 +8,7 @@ require_relative '../models/owner'
 get '/adoptions' do
   @animals = Animal.all()
   @owners = Owner.all()
+  @adoptions = Adoption.all()
   erb(:"adoptions/index")
 end
 
@@ -18,7 +19,7 @@ get 'adoption/new' do
 end
 
 post '/adoptions' do
-  adoption = Adoption.new(params)
-  adoption.save()
+  @adoptions = Adoption.new(params)
+  @adoptions.save()
   redirect to("/adoptions")
 end

@@ -5,10 +5,10 @@
 <div class="grid">
   <div class="grid-row">
     <% @adoptions.each do |adoption| %>
-    <div class="cell">First name: <%= adoption.owners.first_name %></div>
-    <div class="cell">Second_name: <%= adoption.owners.second_name %></div>
-    <div class="cell">Animal Name: <%= adoption.animal.name %></div>
-    <div class="cell">Animal Age: <%= adoption.animal.age %></div>
+    <div class="cell">First name: <%= adoption.owner.id %></div>
+    <div class="cell">Second_name: <%= adoption.owner.id %></div>
+    <div class="cell">Animal Name: <%= adoption.animal.id %></div>
+    <div class="cell">Animal Age: <%= adoption.animal.id %></div>
   </div>
 </div>
 <hr>
