@@ -8,20 +8,19 @@
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <div class="menu-container">
+  <div class="menu-container">
     <div class="menu">
-        <div class="animals"><a href="/animals">Animals</a></div>
-        <div class="owners"><a href="/owners">Owners</a></div>
-        <div class="adoptions"><a href="/adoptions">Adoptions</a></div>
-      </div>
-    </div>    
-    
-    <footer>
+      <div class="animals"><a href="/animals">Animals</a></div>
+      <div class="owners"><a href="/owners">Owners</a></div>
+      <div class="adoptions"><a href="/adoptions">Adoptions</a></div>
+    </div>
+  </div> 
+  <main>
+   
+    <%= yield %>
+  </main>
+  <footer>
     <div class="footer">© Copyright Animal House Sanctuary 2013. All rights reserved | Charity Number: 1234567 Website powered by Site Diesel</div>
   </footer>
-  <%= yield %>
-  </main>
-  
 </body>
 </html>

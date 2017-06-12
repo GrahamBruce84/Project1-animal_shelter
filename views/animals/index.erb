@@ -2,17 +2,17 @@
 
 <a href="/animals/new">Add a new animal</a>
 
-<div class="grid">
-  <div class="grid-row">
+<div class="flex-container">
+  <ul class="flex-item">
     <% for animal in @animals %>
-    <div class="cell"><img class=" image" src="<%=animal.image_url %>" alt="picture of animal"></div>
-    <div class="cell">Name:<%= animal.name %></div>
-    <div class="cell">Age: <%= animal.age %></div>
-    <div class="cell">Type: <%= animal.type %></div>
-    <div class="cell">Breed: <%= animal.breed %></div>
-    <div class="cell">Admission Date: <%= animal.pretty_date %></div>
-    <div class="cell">Adoptable: <%= animal.adoptable %></div>
+    <li class="flex-item"><img class=" image" src="<%=animal.image_url %>" alt="picture of animal"></li>
+    <li class="flex-item">Name:<%= animal.name %></li>
+    <li class="flex-item">Age: <%= animal.age %></li>
+    <li class="flex-item">Type: <%= animal.type %></li>
+    <li class="flex-item">Breed: <%= animal.breed %></li>
+    <li class="flex-item">Admission Date: <%= animal.pretty_date %></li>
+    <li class="flex-item">Adoptable: <%= animal.adoptable %></li>
     <% end %>
-  </div>
+  </ul>
 </div>
 

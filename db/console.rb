@@ -73,7 +73,7 @@ require 'pry-byebug'
 @owner2.save()
 
 @owner3 = Owner.new({
-  'first_name' => "Graham",
+  'first_name' => "Glenda",
   'second_name' => "Bruce",
   'address' => "22 John Street, Nairn"
   })

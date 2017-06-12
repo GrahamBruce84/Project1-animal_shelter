@@ -2,17 +2,10 @@
 
 <a href="/owners/new">Add a new parent</a>
 
-<table>
-  <tr>
-    <th>First Name</th>
-    <th>Second Name</th>
-    <th>Address</th>
-  </tr>
-  <% for owner in @owners %>
-  <tr>
-    <td><%= owner.first_name %></td>
-    <td><%= owner.second_name %></td>
-    <td><%= owner.address %></td>
-  </tr>
-  <% end %>
-</table>
+<div class="owner">
+<% for owner in @owners %>
+<li>First Name: <%= owner.first_name %></li>
+<li>Second Name: <%= owner.second_name %></li>
+<li>Address: <%= owner.address %></li>
+<% end %>
+</div>

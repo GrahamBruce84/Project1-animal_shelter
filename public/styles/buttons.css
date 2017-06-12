@@ -5,8 +5,8 @@
 }
 
 .menu-container {
- color: #fff;
- padding: 20px 0;
+  display: flex;
+
  display: inline-block;
  justify-content: center;
 }
@@ -14,5 +14,7 @@
 .menu {
   display: flex;
   border: 1px solid #fff;
-  width: 900px;
+  width: 50px; 
+  color: #fff;
+ padding: 20px 0;
 }
