@@ -1,35 +1,18 @@
 <h1>Animals</h1>
 
-<a href="animals/new">Add a new animal</a>
+<a href="/animals/new">Add a new animal</a>
 
-<table class="flex">
-  <tr>
-    <th>>Name</th>
-    <th>|</th>
-    <th>Age</th>
-    <th>|</th>
-    <th>Type</th>
-    <th>|</th>
-    <th>Breed</th>
-    <th>|</th>
-    <th>Admission Date</th>
-  </tr>
-  <% for animal in @animals %>
-  <tr>
-    <td><%= animal.name %></td>
-    <td>|</td>
-    <td><%= animal.age %></td>
-    <td>|</td>
-    <td><%= animal.type %></td>
-    <td>|</td>
-    <td><%= animal.breed %></td>
-    <td>|</td>
-    <td><%= animal.admission_date %></td>
-    <td>|</td>
-    <td><label for="adoptable">Adoptable</label>
-    <select name="adoptable" id="adoptable">
-    <option value="yes">Yes</option>
-    <option value="no">No</option></select></td>
-  </tr>
-  <% end %>
-</table>
+<div class="grid">
+  <div class="grid-row">
+    <% for animal in @animals %>
+    <div class="cell"><img class=" image" src="<%=animal.image_url %>" alt="picture of animal"></div>
+    <div class="cell">Name:<%= animal.name %></div>
+    <div class="cell">Age: <%= animal.age %></div>
+    <div class="cell">Type: <%= animal.type %></div>
+    <div class="cell">Breed: <%= animal.breed %></div>
+    <div class="cell">Admission Date: <%= animal.pretty_date %></div>
+    <div class="cell">Adoptable: <%= animal.adoptable %></div>
+    <% end %>
+  </div>
+</div>
+

@@ -9,23 +9,19 @@
 </head>
 <body>
   <main>
-  <div class="navbar">
-    <nav id="mynavbar">
-      <ul>
-        <li><a href="/animals">Animals</a></li>
-        <li><a href="/owners">Owners</a></li>
-        <li><a href="/adoptions">Adoptions</a></li>
-      </ul>
-    </nav>
-    </div>
-    <%= yield %>
-  </main>
-  <footer>
-  <table>
-    <tr>
-      <th>© Copyright Animal House Sanctuary 2013. All rights reserved | Charity Number: 1234567 Website powered by Site Diesel</th>
-    </tr>
-  </table>
+    <div class="menu-container">
+    <div class="menu">
+        <div class="animals"><a href="/animals">Animals</a></div>
+        <div class="owners"><a href="/owners">Owners</a></div>
+        <div class="adoptions"><a href="/adoptions">Adoptions</a></div>
+      </div>
+    </div>    
+    
+    <footer>
+    <div class="footer">© Copyright Animal House Sanctuary 2013. All rights reserved | Charity Number: 1234567 Website powered by Site Diesel</div>
   </footer>
+  <%= yield %>
+  </main>
+  
 </body>
 </html>

@@ -1,24 +1,18 @@
-.navbar {
-  background-color: #e4d9ed;
-  overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.mynavbar {
-  float: left;
-  display: block;
-  color: violet; 
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.menu-container {
+ color: #fff;
+ padding: 20px 0;
+ display: inline-block;
+ justify-content: center;
 }
 
-.navbar:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+.menu {
+  display: flex;
+  border: 1px solid #fff;
+  width: 900px;
 }

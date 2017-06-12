@@ -1,4 +1,6 @@
 require_relative '../db/sql_runner'
+require_relative './owner'
+require_relative './animal'
 
 class Adoption
 
@@ -36,7 +38,7 @@ class Adoption
             ON ad.animal_id = a.id
             WHERE a.id = #{@animal_id};"
     result = SqlRunner.run(sql)
-    return Adoption.new(result[0])
+    return Animal.new(result[0])
   end
 
   def owner()
@@ -45,14 +47,12 @@ class Adoption
             ON ad.owner_id = o.id
             WHERE o.id = #{@owner_id};"
     result = SqlRunner.run(sql)
-    return Adoption.new(result[0])
+    return Owner.new(result[0])
   end
 
   def self.delete()
     sql = "DELETE FROM adoptions WHERE id = #{id}"
     SqlRunner.run(sql)
   end
-
-  
 
 end

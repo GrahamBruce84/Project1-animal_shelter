@@ -12,9 +12,10 @@ get '/adoptions' do
   erb(:"adoptions/index")
 end
 
-get 'adoption/new' do
-  @animals = Animal.all()
+get '/adoptions/new' do
+  @animals = Animal.find_adoptable()
   @owners = Owner.all()
+
   erb(:"adoptions/new")
 end
 
@@ -23,3 +24,4 @@ post '/adoptions' do
   @adoptions.save()
   redirect to("/adoptions")
 end
+

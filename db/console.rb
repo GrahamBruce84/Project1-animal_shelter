@@ -8,7 +8,9 @@ require 'pry-byebug'
   'age' => 3,
   'type' => "Dog",
   'breed' => "Daschund",
-  'admission_date' => "17/02/2017"
+  'admission_date' => "17/02/2017",
+  'adoptable' => true,
+  'image_url' => "../uploads/Dougal.jpeg"
   })
 @animal1.save()
 
@@ -17,17 +19,21 @@ require 'pry-byebug'
   'age' => 17,
   'type' => "Cat",
   'breed' => "Manx",
-  'admission_date' => "02/012/2016"
+  'admission_date' => "02/012/2016",
+  'adoptable' => false,
+  'image_url' => "../uploads/tabby.jpg"
   })
 @animal2.save()
 
 @animal3 = Animal.new({
-  'name' => "Marley",
-  'age' => 7,
+  'name' => "Ghost",
+  'age' => 3,
   'type' => "Dog",
-  'breed' => "Labrador",
-  'admission_date' => "09/06/2017"
-  })
+  'breed' => "Husky",
+  'admission_date' => "09/06/2017",
+  'adoptable' => true,
+  'image_url' => "../uploads/ghost.jpeg"
+    })
 @animal3.save()
 
 @animal4 = Animal.new({
@@ -35,7 +41,9 @@ require 'pry-byebug'
   'age' => 9,
   'type' => "Rabbit",
   'breed' => "Lionhead",
-  'admission_date' => "12/10/2016"
+  'admission_date' => "12/10/2016",
+  'adoptable' => true,
+  'image_url' => "../uploads/Lionhead.jpg"
   })
 @animal4.save()
 
@@ -44,7 +52,9 @@ require 'pry-byebug'
   'age' => 4,
   'type' => "Snake",
   'breed' => "Indian Rock Python",
-  'admission_date' => "20/05/2015"
+  'admission_date' => "20/05/2015",
+  'adoptable' => true,
+  'image_url' => "../uploads/kaa.jpg"
   })
 @animal5.save()
 
@@ -114,8 +124,6 @@ adoption3.save()
 # })
 # adoption5.save()
 
-binding.pry
-nil
 
 
 

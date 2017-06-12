@@ -1,38 +1,27 @@
 body {
-  background-color: #efdced;
+  background-color: #f9e5f7;
   font-family: 'Architects Daughter';
 }
 
-.flex {
-  display: flex;
-}
-
-table tr th td {
-  padding: 10px;
-  float: inline-block;
-}
-
-tr {
-  padding: 10px;
-}
-
-td {
-  padding: 10px;
-}
-
-footer {
-  position: absolute;
+.footer {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
-  background-color: #efdced;
+  padding: 5px;
+  background-color: #f9b4f7;
   text-align: right;
+  
 }
 
+.image {
+  height: 40%;
+  width: 40%;
+}
 
+.cell {
+  font-size: 17px;
 
-
+}
 
 
 

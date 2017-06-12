@@ -3,17 +3,23 @@ require 'sinatra/contrib/all'
 require_relative '../models/animal'
 
 get '/animals' do
-@animals = Animal.all()
- erb(:"animals/index")
+  @animals = Animal.all()
+  erb(:"animals/index")
 end
 
-get 'animals/new' do
+get '/animals/new' do
   @animals = Animal.all()
   erb(:"animals/new")
 end
 
-post 'animals' do
+post '/animals' do
   animal = Animal.new(params)
   animal.save()
   redirect to ("/animals")
-end
+end 
+
+# post "/upload" do 
+#   File.open('uploads/' + params[''][:kaa.jpg], "w") do |f|
+#     f.write(params['/images'][:kaa.jpg)
+#   end
+# end

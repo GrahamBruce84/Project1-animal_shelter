@@ -1,5 +1,20 @@
-<form action="/adoptions" method="post"></form>
+<form action="/adoptions" method="post">
 
-<label for="first_name">First Name</label>
-<label for="second_name">Second Name</label>
-<label for="Address">Address</label>
+
+<label for="name">Name</label>
+<select name="owner_id" id="name">
+<% @owners.each do |owner| %>
+<option value="<%= owner.id %>"><%= owner.first_name %> <%= owner.second_name %></option>
+<% end %>
+</select>
+
+<label for="animal_name">Animal Name</label>
+<select name="animal_id" id="animal_name">
+<% @animals.each do |animal| %>
+<option value="<%= animal.id %>"><%= animal.name %></option>
+<% end %>
+</select>
+
+<input type="submit" Value="Complete adoption">
+
+</form>
