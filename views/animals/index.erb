@@ -26,10 +26,6 @@
     <div class="flex-item">Adoptable: <%= animal.adoptable %></div> -->
 
     <div><a href= "/animals/show">View Details</a></div>
-
-    <form  action="/animals/<%= animal.id %>/delete" method="post">
-      <input id="delete" type="submit" value="delete">
-    </form>
     <br>
     <br>
     <% end %>

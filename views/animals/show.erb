@@ -1,10 +1,13 @@
-<div class="flex-item">Name: <%= @animal.name %></div>
-<div class="flex-item">Age: <%= @animal.age %></div>
-<div class="flex-item">Type: <%= @animal.type %></div>
-<div class="flex-item">Breed: <%= @animal.breed %></div>
-<div class="flex-item">Admission Date: <%= @animal.pretty_date %></div>
-<div class="flex-item">Adoptable: <%= @animal.adoptable %></div>
+<div class="flex-item">Name: <%= @animals.name %></div>
+<div class="flex-item">Age: <%= @animals.age %></div>
+<div class="flex-item">Type: <%= @animals.type %></div>
+<div class="flex-item">Breed: <%= @animals.breed %></div>
+<div class="flex-item">Admission Date: <%= @animals.pretty_date %></div>
+<div class="flex-item">Adoptable: <%= @animals.adoptable %></div>
 
 <p><a href="/animal/<%= @animals.id %>/edit">Edit customer details</a></p>
+<form  action="/animals/<%= animal.id %>/delete" method="post">
+  <input id="delete" type="submit" value="delete">
+</form>
 
 

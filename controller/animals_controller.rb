@@ -13,7 +13,7 @@ get '/animals/new' do
 end
 
 get '/animals/:id' do
-  @animal = Animal.find(params[:id])
+  @animals = Animal.find(params[:id])
   erb(:"animals/show")
 end
 
@@ -26,6 +26,12 @@ end
 get '/animals/:id/edit' do
   @animal = Animal.find(params[:id])
   erb(:"animals/edit")
+end
+
+post '/animals/:id' do
+  @animal = Animal.find(params[:id])
+  @animal.update()
+  redirect to "/animals/#{params[:id]}"
 end
 
 get '/filter_by_type' do
