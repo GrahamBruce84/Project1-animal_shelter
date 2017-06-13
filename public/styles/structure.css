@@ -1,6 +1,11 @@
 body {
-  background-color: #f9e5f7;
+  background: linear-gradient(to right, #f9b4f7, #fff 20%, transparent), url("../images/running-dog.jpg") center center fixed;
+  background-size: cover;
+  /*background-position: center center;*/
   font-family: 'Architects Daughter';
+}
+.linear-gradient {
+  width: 40%;
 }
 
 ul {
@@ -12,28 +17,21 @@ ul {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background-color: #f9b4f7;
+  background-color: ;
   text-align: right;
 }
 
 .image {
-  height: 40%;
-  width: 40%;
+  height: 35%;
+  width: 35%;
+  border: 15px solid #fff;
+   border-bottom: 55px solid #fff;
+   -webkit-box-shadow: 3px 3px 3px #777;
+      -moz-box-shadow: 3px 3px 3px #777;
+           box-shadow: 3px 3px 3px #777;
+           border-radius: 25px;
 }
 
-.flex-container {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  justify-content: space-around;
-}
-
-.flex-item {
-/*  display: flex;
-  justify-content: left;*/
- padding: 5px;
-}
 .cell {
   font-size: 17px;
 }
@@ -48,9 +46,21 @@ ul {
   margin: 10px;
 }
 
-
 #menu>ul>li {
   display: inline;
+  font-size: 25px;
+  border: solid purple;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+#line {
+  width: 40%;
+  margin: 0px;
+}
+
+.flex {
   font-size: 25px;
 }
 
