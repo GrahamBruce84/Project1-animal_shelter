@@ -7,5 +7,9 @@
 <li>First Name: <%= owner.first_name %></li>
 <li>Second Name: <%= owner.second_name %></li>
 <li>Address: <%= owner.address %></li>
+<form action="/owners/<%= owner.id %>/delete" method="post">
+  <input type="submit" value="delete">
+</form>
+<hr/>
 <% end %>
 </div>

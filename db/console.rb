@@ -90,7 +90,7 @@ require 'pry-byebug'
 @owner5 = Owner.new({
   'first_name' => "Colin",
   'second_name' => "Bell",
-  'address' => "39 Joke Street, Glasgow"
+  'address' => "2 Pinewood Avenue, Glasgow"
   })
 @owner5.save()
 
@@ -111,19 +111,6 @@ adoption3 = Adoption.new({
   'owner_id' => @owner2.id
   })
 adoption3.save()
-
-# adoption4 = Adoption.new({
-#   'animal_id' => animal2.id,
-#   'owner_id' => owner4.id
-#   })
-# adoption4.save()
-
-# adoption5 = Adoption.new({
-#   'animal_id' => animal3.id,
-#   'owner_id' => owner5.id
-# })
-# adoption5.save()
-
 
 
 

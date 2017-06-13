@@ -5,13 +5,15 @@
 <div class="flex-container">
   <ul class="flex-item">
     <% for animal in @animals %>
-    <li class="flex-item"><img class=" image" src="<%=animal.image_url %>" alt="picture of animal"></li>
+    <li class="flex-item"><img class=" image" src="../uploads/<%=animal.image_url %>" alt="picture of animal"></li>
     <li class="flex-item">Name:<%= animal.name %></li>
     <li class="flex-item">Age: <%= animal.age %></li>
     <li class="flex-item">Type: <%= animal.type %></li>
     <li class="flex-item">Breed: <%= animal.breed %></li>
     <li class="flex-item">Admission Date: <%= animal.pretty_date %></li>
     <li class="flex-item">Adoptable: <%= animal.adoptable %></li>
+
+    <li><a href= "/animals/<%= animal.id %>/edit">Edit details</a></li>
     <% end %>
   </ul>
 </div>

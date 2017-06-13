@@ -15,7 +15,6 @@ end
 get '/adoptions/new' do
   @animals = Animal.find_adoptable()
   @owners = Owner.all()
-
   erb(:"adoptions/new")
 end
 

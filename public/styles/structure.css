@@ -40,13 +40,18 @@ ul {
 .owner {
   list-style-type: none;
   padding: 10px;
-  border-bottom: dashed;
+  
 }
 
 .owner>li {
   margin: 10px;
 
 }
+
+.owner>hr {
+
+}
+
 
 
 

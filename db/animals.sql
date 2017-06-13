@@ -22,6 +22,6 @@ address VARCHAR(255)
 
 CREATE TABLE adoptions (
 id SERIAL8 PRIMARY KEY,
-animal_id INT8 REFERENCES animals(id),
-owner_id INT8 references owners(id)
+animal_id INT8 REFERENCES animals(id) ON DELETE CASCADE,
+owner_id INT8 references owners(id) ON DELETE CASCADE
 );

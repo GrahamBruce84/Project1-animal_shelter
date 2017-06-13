@@ -18,8 +18,7 @@ post '/animals' do
   redirect to ("/animals")
 end 
 
-# post "/upload" do 
-#   File.open('uploads/' + params[''][:kaa.jpg], "w") do |f|
-#     f.write(params['/images'][:kaa.jpg)
-#   end
-# end
+get '/animals/:id/edit' do
+  @animal = Animal.find(params[:id])
+  erb(:"animals/edit")
+end

@@ -17,3 +17,8 @@ post '/owners' do
   owner.save()
   redirect to ("/owners")
 end
+
+post '/owners/:id/delete' do
+  Owner.delete(params[:id])
+  redirect to ("/owners")
+end
