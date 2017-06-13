@@ -3,6 +3,7 @@ require_relative '../db/sql_runner'
 class Animal
 
   attr_accessor :id, :name, :age, :type, :breed, :admission_date, :image_url
+  attr_writer :adoptable
 
   def initialize(options)
     @id = options['id'].to_i() if options['id']
@@ -49,6 +50,12 @@ class Animal
     return Animal.new(result[0])
   end
 
+  def self.find_type(type)
+    sql = "SELECT * FROM animals WHERE type = '#{type}'"
+    result = SqlRunner.run(sql)
+    return result.map {|animal| Animal.new(animal)}
+  end
+
   def update()
     sql = "UPDATE animals SET (name, age, type, breed, admission_date, image_url, adoptable) = 
     ('#{@name}', #{@age}, '#{@type}', '#{@breed}', '#{@admission_date}', '#{@image_url}', '#{@adoptable}')
@@ -70,7 +77,7 @@ class Animal
     if @adoptable == "t"
       return "Ready for a new home"
     else
-      return "Still in training"
+      return "Still in training/In adoption process"
     end
   end
 

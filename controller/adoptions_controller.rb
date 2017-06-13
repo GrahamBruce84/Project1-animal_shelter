@@ -21,6 +21,9 @@ end
 post '/adoptions' do
   @adoptions = Adoption.new(params)
   @adoptions.save()
+  pet = Animal.find(params[:animal_id])
+  pet.adoptable = false
+  pet.update()
   redirect to("/adoptions")
 end
 

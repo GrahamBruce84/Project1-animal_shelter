@@ -14,7 +14,6 @@ ul {
   padding: 5px;
   background-color: #f9b4f7;
   text-align: right;
-
 }
 
 .image {
@@ -23,14 +22,16 @@ ul {
 }
 
 .flex-container {
+  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
   justify-content: space-around;
 }
 
 .flex-item {
+/*  display: flex;
+  justify-content: left;*/
  padding: 5px;
 }
 .cell {
@@ -45,12 +46,16 @@ ul {
 
 .owner>li {
   margin: 10px;
-
 }
 
-.owner>hr {
 
+#menu>ul>li {
+  display: inline;
+  font-size: 25px;
 }
+
+
+
 
 
 

@@ -22,3 +22,8 @@ get '/animals/:id/edit' do
   @animal = Animal.find(params[:id])
   erb(:"animals/edit")
 end
+
+get '/filter_by_type' do
+  @animals = Animal.find_type(params[:animal_type])
+  erb(:"/animals/filter_by_type")
+end

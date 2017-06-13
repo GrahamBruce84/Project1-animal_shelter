@@ -9,7 +9,7 @@ require 'pry-byebug'
   'type' => "Dog",
   'breed' => "Daschund",
   'admission_date' => "17/02/2017",
-  'adoptable' => true,
+  'adoptable' => false,
   'image_url' => "../uploads/Dougal.jpeg"
   })
 @animal1.save()
@@ -20,7 +20,7 @@ require 'pry-byebug'
   'type' => "Cat",
   'breed' => "Manx",
   'admission_date' => "02/012/2016",
-  'adoptable' => false,
+  'adoptable' => true,
   'image_url' => "../uploads/tabby.jpg"
   })
 @animal2.save()
@@ -42,7 +42,7 @@ require 'pry-byebug'
   'type' => "Rabbit",
   'breed' => "Lionhead",
   'admission_date' => "12/10/2016",
-  'adoptable' => true,
+  'adoptable' => false,
   'image_url' => "../uploads/Lionhead.jpg"
   })
 @animal4.save()
@@ -53,7 +53,7 @@ require 'pry-byebug'
   'type' => "Snake",
   'breed' => "Indian Rock Python",
   'admission_date' => "20/05/2015",
-  'adoptable' => true,
+  'adoptable' => false,
   'image_url' => "../uploads/kaa.jpg"
   })
 @animal5.save()

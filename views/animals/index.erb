@@ -1,5 +1,15 @@
 <h1>Animals</h1>
 
+<form action="/filter_by_type">
+<label for="type">Search by type</label>
+<select name="animal_type" id="type">
+<% @animals.each do |animal| %>
+<option value="<%= animal.type %>"><a><%= animal.type %></a></option>
+<% end %>
+</select>
+<input type="submit" value="search">
+</form>
+<br>
 <a href="/animals/new">Add a new animal</a>
 
 <div class="flex-container">

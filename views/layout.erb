@@ -8,15 +8,17 @@
   <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
 </head>
 <body>
-  <div class="menu-container">
-    <div class="menu">
-      <div class="animals"><a href="/animals">Animals</a></div>
-      <div class="owners"><a href="/owners">Owners</a></div>
-      <div class="adoptions"><a href="/adoptions">Adoptions</a></div>
-    </div>
-  </div> 
+  <nav>
+  <div id="menu">
+      <ul id="nav">
+        <li><a href="/animals">Animals</a></li>
+        <li><a href="/owners">Owners</a></li>
+        <li><a href="/adoptions">Adoptions</a></li>
+      </ul>
+      </div>
+  </nav>
   <main>
-   
+
     <%= yield %>
   </main>
   <footer>
