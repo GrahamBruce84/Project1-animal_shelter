@@ -59,6 +59,9 @@ footer {
   margin-bottom: 50px;
 }
 
+.cell, #adopted {
+  font-size: 35px;
+}
 
 
 

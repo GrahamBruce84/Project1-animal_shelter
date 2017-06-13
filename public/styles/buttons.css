@@ -11,10 +11,12 @@ a {
 }
 
 #delete {
-  width: 60px !important;
-  height: 45px !important;
+  width: 100px !important;
+  height: 50px !important;
+  background-color: transparent;
+  color: white;
   font-family: 'Architects Daughter';
-  color: purple;
+  font-size: 1em;
 }
 
 #search {
@@ -32,5 +34,5 @@ a {
   border-radius: 25px;
   padding: 10px 20px;
   margin: 10px;
-  color: blue;
 }
+

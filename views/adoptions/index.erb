@@ -6,8 +6,7 @@
   <div class="grid-row">
     <% @adoptions.each do |adoption| %>
     <div class="cell">First name: <%= adoption.owner.first_name %></div>
-    <div class="cell">Second_name: <%= adoption.owner.second_name %></div>
-    <p>Adopted</p>
+    <p id="adopted">Adopted <i class="em em---1"></i></p>
     <div class="cell">Pet Name: <%= adoption.animal.name %></div>
   </div>
 </div>
