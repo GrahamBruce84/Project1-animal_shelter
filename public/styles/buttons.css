@@ -11,5 +11,26 @@ a {
 }
 
 #delete {
-  font-size: 20px;
+  width: 60px !important;
+  height: 45px !important;
+  font-family: 'Architects Daughter';
+  color: purple;
+}
+
+#search {
+  font-size: 25px;
+}
+
+#search-drop {
+  font-size: 15px;
+}
+
+#menu>ul>li {
+  display: inline;
+  font-size: 25px;
+  border: solid purple;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 10px;
+  color: blue;
 }

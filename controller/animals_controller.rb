@@ -27,3 +27,8 @@ get '/filter_by_type' do
   @animals = Animal.find_type(params[:animal_type])
   erb(:"/animals/filter_by_type")
 end
+
+post '/animals/:id/delete' do
+  Animal.delete(params[:id])
+  redirect to ("/animals")
+end

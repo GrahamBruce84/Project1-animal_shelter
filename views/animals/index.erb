@@ -1,13 +1,13 @@
-<h1>Animals</h1>
+<h1>Our Animals</h1>
 
 <form action="/filter_by_type">
-  <label for="type">Search by type</label>
-  <select name="animal_type" id="type">
+  <label id="search" for="type">Search by type</label>
+  <select id="search-drop" name="animal_type" id="type">
     <% @animals.each do |animal| %>
     <option value="<%= animal.type %>"><a><%= animal.type %></a></option>
     <% end %>
   </select>
-  <input type="submit" value="search">
+  <input id="search" type="submit" value="search">
 </form>
 <br>
 <a href="/animals/new">Add a new animal</a>
@@ -15,7 +15,9 @@
 <div class="flex-container">
 <div class="flex">
     <% for animal in @animals %>
+
     <div class="flex-item"><img class=" image" src="../uploads/<%=animal.image_url %>" alt="picture of animal"></div>
+    <p id="pet_name"><%= animal.name %> <%= animal.pretty_date %></p>
     <div class="flex-item">Name:<%= animal.name %></div>
     <div class="flex-item">Age: <%= animal.age %></div>
     <div class="flex-item">Type: <%= animal.type %></div>
@@ -24,6 +26,11 @@
     <div class="flex-item">Adoptable: <%= animal.adoptable %></div>
 
     <div><a href= "/animals/<%= animal.id %>/edit">Edit details</a></div>
+    <form  action="/animals/<%= animal.id %>/delete" method="post">
+      <input id="delete" type="submit" value="delete">
+    </form>
+    <br>
+    <br>
     <% end %>
   </div>
 </div>

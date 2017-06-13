@@ -1,35 +1,32 @@
 body {
-  background: linear-gradient(to right, #f9b4f7, #fff 20%, transparent), url("../images/running-dog.jpg") center center fixed;
+  background: linear-gradient(to right, #6872ff, #fff 40%, transparent), url("../images/puppy.jpeg") center center fixed;
   background-size: cover;
   /*background-position: center center;*/
   font-family: 'Architects Daughter';
 }
-.linear-gradient {
-  width: 40%;
+
+h1 {
+  font-size: 50px;
+  margin: 5px;
 }
 
 ul {
   list-style-type: none;
 }
 
-.footer {
-  right: 0;
-  bottom: 0;
-  left: 0;
+footer {
   padding: 5px;
-  background-color: ;
   text-align: right;
+  margin: 0;
+  height: top 100vh;
 }
 
 .image {
   height: 35%;
   width: 35%;
-  border: 15px solid #fff;
-   border-bottom: 55px solid #fff;
-   -webkit-box-shadow: 3px 3px 3px #777;
-      -moz-box-shadow: 3px 3px 3px #777;
-           box-shadow: 3px 3px 3px #777;
-           border-radius: 25px;
+  border: 15px solid #e6ebe0;
+   border-bottom: 55px solid #e6ebe0;
+           box-shadow: 10px 10px 10px #777;
 }
 
 .cell {
@@ -46,14 +43,6 @@ ul {
   margin: 10px;
 }
 
-#menu>ul>li {
-  display: inline;
-  font-size: 25px;
-  border: solid purple;
-  border-radius: 25px;
-  padding: 10px 20px;
-  margin: 10px;
-}
 
 #line {
   width: 40%;
@@ -62,6 +51,12 @@ ul {
 
 .flex {
   font-size: 25px;
+}
+
+#pet_name {
+  padding-left: 140px;
+  margin-top: -55px;
+  margin-bottom: 50px;
 }
 
 
