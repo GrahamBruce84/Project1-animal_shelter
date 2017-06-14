@@ -57,15 +57,8 @@ class Animal
   end
 
   def update(options)
-    sql = "UPDATE animals 
-    SET name      = '#{options['name']}',
-    age             = '#{options['age']}',
-    type            = '#{options['type']}',
-    breed           = '#{options['breed']}',
-    admission_date  = '#{options['admission_date']}',
-    image_url       = '#{options['image_url']}',
-    adoptable       = '#{options['adoptable']}'
-    WHERE id        = #{options['id']}"
+     sql = "UPDATE animals SET (name, age, type, breed, admission_date, image_url, adoptable) = ('#{@name}', #{@age}, '#{@type}', '#{@breed}', '#{@admission_date}', '#{@image_url}', #{@adoptable}) RETURNING *;"
+
     SqlRunner.run(sql)
   end
 
