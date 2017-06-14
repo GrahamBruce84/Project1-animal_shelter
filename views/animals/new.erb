@@ -1,27 +1,29 @@
+<div class="new_animal">
 <form action="/animals" method="post" enctype='multipart/form-data'>
 
-  <input type='file' name='image_url'>
+  <input type='file' name='image_url'> <br>
 
   <label for="name">Name</label>
-  <input type="text" id="name" name="name" required>
+  <input type="text" id="name" name="name" required> <br>
 
   <label for="age">Age</label>
-  <input type="text" id="age" name="age" required>
+  <input type="text" id="age" name="age" required> <br>
 
   <label for="type">Type</label>
-  <input type="text" id="type" name="type" required>
+  <input type="text" id="type" name="type" required> <br>
 
   <label for="breed">Breed</label>
-  <input type="text" id="breed" name="breed" required>
+  <input type="text" id="breed" name="breed" required> <br>
 
   <label for="admission_date">Admission Date</label>
-  <input type="date" id="admission_date" name="admission_date" required>
+  <input type="date" id="admission_date" name="admission_date" required> <br>
 
   <label for="adoptable">Adoptable</label>
     <select name="adoptable" id="adoptable">
       <option value="yes">Yes</option>
-      <option value="no">No</option></select>
+      <option value="no">No</option></select> <br>
 
-  <input type="submit" value="Add to the family!">
-  
+  <input class="edit_animal" type="submit" value="Add to the family!"> <br>
+
 </form>
+</div>

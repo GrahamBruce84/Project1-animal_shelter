@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #6872ff, #fff 40%, transparent), url("../images/puppy.jpeg") center center fixed;
+  background: linear-gradient(to right, red, #fff 40%, transparent), url("../images/puppy.jpeg") center center fixed;
   background-size: cover;
 
   /*background-position: center center;*/
@@ -60,6 +60,14 @@ footer {
   font-size: 35px;
 }
 
+.new_animal {
+  font-size: 30px;
+}
+
+.edit_form{
+  text-align: left;
+  font-size: 30px;
+}
 
 
 
