@@ -13,21 +13,21 @@
 <a href="/animals/new">Add a new animal</a>
 
 <div class="flex-container">
-<div class="flex">
+  <div class="flex">
     <% for animal in @animals %>
 
     <div class="flex-item"><img class=" image" src="../uploads/<%=animal.image_url %>" alt="picture of animal"></div>
     <p id="pet_name"><%= animal.name %> <%= animal.pretty_date %></p>
     <div class="flex-item">Name: <%= animal.name %></div>
- <!--    <div class="flex-item">Age: <%= animal.age %></div>
+    <div class="flex-item">Age: <%= animal.age %></div>
     <div class="flex-item">Type: <%= animal.type %></div>
     <div class="flex-item">Breed: <%= animal.breed %></div>
     <div class="flex-item">Admission Date: <%= animal.pretty_date %></div>
-    <div class="flex-item">Adoptable: <%= animal.adoptable %></div> -->
-
-    <div><a href= "/animals/show">View Details</a></div>
-    <br>
-    <br>
+    <div class="flex-item">Adoptable: <%= animal.adoptable %></div><div class="edit_animal_div">
+    <a class="edit_animal" href="/animals/<%= animal.id %>/edit">Edit animal details</a></div>
+    <form  action="/animals/<%= animal.id %>/delete" method="post">
+      <input id="delete" type="submit" value="delete">
+    </form>
     <% end %>
   </div>
 </div>

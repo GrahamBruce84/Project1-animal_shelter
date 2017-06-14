@@ -1,27 +1,29 @@
-<form action="/animals" method="post" enctype='multipart/form-data'>
+<div class="edit_form">
+<form action="/animals/<%= @animal.id %>/edit" method="post">
 
-  <input type='file' name='image_url'>
+  <input type="hidden" name="image_url" value="<%= @animal.image_url %>">
 
   <label for="name">Name</label>
-  <input type="text" id="name" name="name" value="<% @animal.name %>" required>
+  <input type="text" id="name" name="name" value="<%= @animal.name %>" required>
 
   <label for="age">Age</label>
-  <input type="text" id="age" name="age" value="<% @animal.age %>" required>
+  <input type="text" id="age" name="age" value="<%= @animal.age %>" required>
 
   <label for="type">Type</label>
-  <input type="text" id="type" name="type" value="<% @animal.type %>" required>
+  <input type="text" id="type" name="type" value="<%= @animal.type %>" required>
 
   <label for="breed">Breed</label>
-  <input type="text" id="breed" name="breed" required>
+  <input type="text" id="breed" name="breed" value="<%= @animal.breed %>" required>
 
   <label for="admission_date">Admission Date</label>
-  <input type="date" id="admission_date" name="admission_date" required>
+  <input type="date" id="admission_date" name="admission_date" value="<%= @animal.admission_date %>" required>
 
   <label for="adoptable">Adoptable</label>
-    <select name="adoptable" id="adoptable">
-      <option value="yes">Yes</option>
-      <option value="no">No</option></select>
+  <select name="adoptable" id="adoptable">
+    <option value="yes">Yes</option>
+    <option value="no">No</option></select>
 
-  <input type="submit" value="Edit Member!">
-  
-</form>
+    <input type="submit" value="Edit Member!">
+
+  </form>
+  </div>

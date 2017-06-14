@@ -1,13 +1,9 @@
 body {
   background: linear-gradient(to right, #6872ff, #fff 40%, transparent), url("../images/puppy.jpeg") center center fixed;
   background-size: cover;
+
   /*background-position: center center;*/
   font-family: 'Architects Daughter';
-}
-
-h1 {
-  font-size: 50px;
-  margin: 5px;
 }
 
 ul {
@@ -27,6 +23,7 @@ footer {
   border: 15px solid #e6ebe0;
    border-bottom: 55px solid #e6ebe0;
            box-shadow: 10px 10px 10px #777;
+           margin-top: 8px;
 }
 
 .cell {

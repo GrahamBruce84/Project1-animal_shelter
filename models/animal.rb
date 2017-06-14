@@ -56,10 +56,16 @@ class Animal
     return result.map {|animal| Animal.new(animal)}
   end
 
-  def update()
-    sql = "UPDATE animals SET (name, age, type, breed, admission_date, image_url, adoptable) = 
-    ('#{@name}', #{@age}, '#{@type}', '#{@breed}', '#{@admission_date}', '#{@image_url}', '#{@adoptable}')
-    WHERE id = #{@id};"
+  def update(options)
+    sql = "UPDATE animals 
+    SET name      = '#{options['name']}',
+    age             = '#{options['age']}',
+    type            = '#{options['type']}',
+    breed           = '#{options['breed']}',
+    admission_date  = '#{options['admission_date']}',
+    image_url       = '#{options['image_url']}',
+    adoptable       = '#{options['adoptable']}'
+    WHERE id        = #{options['id']}"
     SqlRunner.run(sql)
   end
 

@@ -1,9 +1,13 @@
+.nav {
+  color: white;
+}
+
 .menu {
   display: flex;
   border: 1px solid #fff;
-  width: 50px; 
+  width: 80px; 
   color: #fff;
- padding: 20px 0;
+ padding: 300px 0;
 }
 
 a {
@@ -13,26 +17,60 @@ a {
 #delete {
   width: 100px !important;
   height: 50px !important;
-  background-color: transparent;
+  background-color: blue;
+  border: solid purple;
+  border-radius: 25px;
+  margin-top: 15px;
   color: white;
   font-family: 'Architects Daughter';
-  font-size: 1em;
-}
-
-#search {
   font-size: 25px;
-}
-
-#search-drop {
-  font-size: 15px;
+  box-shadow: 3px 3px 1px 1px;
+  box-shadow: black;
 }
 
 #menu>ul>li {
   display: inline;
   font-size: 25px;
   border: solid purple;
+  background-color: blue;
   border-radius: 25px;
+  border-bottom: 10px;
   padding: 10px 20px;
   margin: 10px;
+  box-shadow: 5px 5px 1px 1px;
+}
+
+.edit_form {
+  font-size: 30px;
+  text-align: center;
+  vertical-align:
+}
+
+.edit_animal_div {
+  margin-top: 20px;
+}
+
+.edit_animal {
+  border: solid purple;
+  border-radius: 25px;
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+  padding: 5px 10px;
+  top: 10px;
+  box-shadow: 3px 3px 1px 1px;
+}
+
+.home {
+  font-size: 150px;
+  font-family: 'Animal House';
+  color: red;
+  text-shadow: -2px 0 yellow, 0 2px yellow, 2px 0 yellow, 0 -2px yellow;
+  text-align: center;
+}
+
+.home_button {
+  text-align: center;
+ margin-top: 250px;
 }
 
